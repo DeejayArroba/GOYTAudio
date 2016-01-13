@@ -12,6 +12,8 @@ if not os.path.exists(current_dir + "/output"):
 
 csgo_dir = "/storage/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/"
 
+shutil.copyfile(current_dir + "/ytaudio.cfg", csgo_dir + "/csgo/cfg/ytaudio.cfg")
+
 vid_url = input("Video url: ")
 video = pafy.new(vid_url)
 
